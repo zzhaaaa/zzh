@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>河南建业官网</title>
+		<link href="css/首页.css" type="text/css" rel="stylesheet" />
+		<link href="css/公共.css"type="text/css"rel="stylesheet" />
+		<link href="css/排名.css"type="text/css"rel="stylesheet" />
+		<style>
+			#box{
+				position:relative;
+				overflow: hidden;
+				margin: 0px auto;
+				width: 960px;
+			}
+			#ul{
+				width:855px;
+				height:360px;
+				
+			}
+			#ul li{
+				list-style: none;
+				display:none;
+				background-color: black;
+				
+			}
+			#ol{
+				position:absolute;
+				top:410px;
+				left:240px;
+			}
+			#ol li{
+				list-style: none;
+				float:left;
+				width:10px;
+				height:10px;
+				
+				border-radius: 50%;
+				border:1px solid white;
+				text-align:center;
+				margin-right:5px;
+			}
+			.active{
+				background-color:white;
+			}
+			
+			.li img{float: left;margin: 0px;}
+			.li span{color: white;font-size: 40px;text-decoration: none;width: 150px;height: 350px;}
+			.li a{text-decoration: none;}
+		</style>
+	</head>
+	<body>
+		<div id="shouye"> 
+			<div id="a">
+			<span><a href="">登陆</a><a href="">注册</a></span>
+			<ul id="a2">
+				<li><img src="img/timg.jpg" /></li>
+				<li class="ll"><a href="首页.html">首页</a>
+		  			<dl class="dl" style="display: none;">
+		  				<dt><a class="a21" href="">一线队</a></dt>
+		  				<dt><a class="a21" href="">视频</a></dt>
+		  				<dt><a class="a21" href="">活动</a></dt>
+		  			</dl>
+		  		</li>
+		  		<li class="ll"><a href="新闻.html">新闻</a>
+		  			<dl class="dl" style="display: none;" >
+		  				<dt><a class="a21" href="">新闻头条</a></dt>
+		  				<dt><a class="a21" href="">官方新闻</a></dt>
+		  				<dt><a class="a21" href="">精彩时刻</a></dt>
+		  			</dl>
+		  		</li>
+		  		<li class="ll"><a href="球队.html#a1">球队</a>
+		  			<dl class="dl" style="display: none;">
+		  				<dt><a class="a21" href="">教练组</a></dt>
+		  				<dt><a class="a21" href="">一线队</a></dt>
+		  				<dt><a class="a21" href="">预备队</a></dt>
+		  			</dl>
+		  		</li>
+		  		<li class="ll"><a href="俱乐部.html">俱乐部</a>
+		  			<dl class="dl" style="display: none;">
+		  				<dt><a class="a21" href="">简介 </a></dt>
+		  				<dt><a class="a21" href="">历史 </a></dt>
+		  				<dt><a class="a21" href="">荣誉</a></dt>
+		  			</dl>
+		  		</li>
+		  		<li class="ll"><a href="票务.html">票务</a></li>
+			</ul>
+		</div>
+		<script>
+	  	var ul=document.getElementById("a2");
+	  	var a=ul.getElementsByTagName("a");
+	  	for(var i=0;i<a.length;i++){
+	  		a[i].onmouseover=function(e){
+	  			this.style.backgroundColor="red";
+	  		    this.style.color="white";
+	  		     var dl=this.nextElementSibling;
+	  		      dl.style.display="block";
+	  		}
+	  		a[i].onmouseout=function(e){
+	  			this.style.backgroundColor="red";
+	  			this.style.color="white";
+	  			 var dl=this.nextElementSibling;
+	  		      dl.style.display="none";
+	  		}
+	  	}
+	  </script>
+			<!--
+            	作者：zzh
+            	时间：2018-06-20
+            	描述：
+            -->
+            <div id="aa">
+            	<div id="aa0">
+            	<div id="box">
+					<ul id="ul">
+						<li style="display: block;"><div class="li"><a href=""><img src="img/8-1P6151152290-L.jpg" alt="" width="655px"height="360px"/><span>关于伊沃加盟河南建业足球俱乐部的公告</span></a></div></li>
+						<li><div class="li"><a href=""><img src="img/8-1P5192222070-L.jpg" alt=""  width="655px"height="360px"/><span>中超-广州富力1-1河南建业</span></a></div></li>
+						<li><div class="li"><a href=""><img src="img/8-1P51P932330-L.jpg" alt=""  width="655px"height="360px"/><span>广州富力VS河南建业 赛前宣传海报展示</span></a></div></li>
+						<li><div class="li"><a href=""><img src="img/8-1P5132245540-L.jpg" alt="" width="655px"height="360px" /><span>中超-河南建业1-0北京人和</span></a></div></li>
+						<li><div class="li"><a href=""><img src="img/8-1P5121005560-L.jpg" width="655px"height="360px"><span>河南建业VS北京人和 赛前宣传海报展示</span></a></div></li>
+					</ul>
+					<ol id="ol">
+						<li class="active"><div class="li"></div></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ol>
+				</div>
+				</div>
+				<script>
+					var ulLi=document.getElementById("ul")
+					        .getElementsByTagName("li");
+					var olLi=document.getElementById("ol")
+					        .getElementsByTagName("li");
+					 var index=0;       
+					var timer=setInterval(fun,1000);  
+					function fun(){
+						ulLi[index].style.display="none";
+						olLi[index].setAttribute("class","");
+						index++;
+						if(index==4){
+							index=0;
+						}
+						ulLi[index].style.display="block";
+						olLi[index].setAttribute("class","active")
+					}
+					var a;
+					for(var i=0;i<olLi.length;i++){
+						olLi[i].index=i; //就是这行是重点了，分别赋予每个li的index值。
+						olLi[i].onmouseover=function(e){
+							clearInterval(timer);
+							a=this.index;
+							console.log(a);
+							for(var j=0;j<olLi.length;j++){
+								olLi[j].setAttribute("class","")
+							}
+						
+							for(var k=0;k<ulLi.length;k++){
+								ulLi[k].style.display="none";
+							}
+							olLi[a].setAttribute("class","active")
+							ulLi[a].style.display="block";
+						}
+					}
+					/*var ul=document.getElementById("ul");
+					ul.onmouseover=function(){
+						clearInterval(timer);
+					}
+					ul.onmouseout=function(){
+						timer=setInterval(fun,1000);
+					}*/
+			
+				</script>
+            	<div id="aa1">
+					<div id="aaa">
+							<div id="b">
+								<h2>一线队</h2>
+									<ul class="item-table">
+										<li>
+											<div class="item-table-left">
+												<a href="/a/webbase/html/first/2018/0621/9139.html" target="_blank" title="球迷开放日 伊沃受热捧"><img src="img/8-1P621125J22b.jpg" ='0' width='250' height='150' alt='球迷开放日 伊沃受热捧'></a>
+											</div>
+											<div class="item-table-right">
+												<h4><a href="/a/webbase/html/first/2018/0621/9139.html">球迷开放日 伊沃受热捧</a></h4>
+												<p class="wenzi">北京时间6月20日下午，建业中牟训练基地迎来了球迷开放日，有将近700名球迷都来到了中牟观看河南建业队训练。然而大多数球迷此次前来只是为了看到一个人，这个人就是伊沃。训练</p>
+											</div>
+										</li>
+										<li>
+			       							 <!--图文并排-->
+			       							 <div class="item-table-left">
+												<a href="/a/webbase/html/first/2018/0615/9138.html" target="_blank" title="关于伊沃加盟河南建业足球俱乐部的公告"><img src="img/伊沃.jpg" border='0' width='250' height='150' alt='关于伊沃加盟河南建业足球俱乐部的公告'></a>
+											</div>
+											<div class="item-table-right">
+												<h4><a href="http://www.jianyefc.com/a/webbase/html/first/2018/0615/9138.html">关于伊沃加盟河南建业足球俱乐部的公告</a></h4>
+												
+											</div>
+										</li>
+									</ul>
+								
+									<ul class="b3">
+										<li>2018-06-12河南建业媒体球迷开放日公告</li>
+										<li>2018-06-05河南建业足球俱乐部召开联赛文化建设研讨会</li>
+										<li>2018-05-19中超-广州富力1-1河南建业</li>
+										<li>2018-05-18广州富力VS河南建业 赛前踩场训练集锦</li>
+									</ul>
+								
+							</div>
+							<div id="c">
+								<h2>视频</h2>
+								<ul class="item-table">
+									<li>
+										<div class="item-table-left">
+											<a href="/a/webbase/shipin/2018/0519/9132.html" target="_blank" title="视频：广州富力VS河南建业 赛后新闻发布会"><img src="img/8-1P519231401154.jpg" border='0' width='250' height='150' alt='视频：广州富力VS河南建业 赛后新闻发布会'></a>
+										</div>
+										<div class="item-table-right">
+											<h4><a href="/a/webbase/shipin/2018/0519/9132.html">视频：广州富力VS河南建业 赛后新闻发布会</a></h4>
+											<p class="wenzi">建业官网讯 2018年中超赛季第11轮河南建业客场1-1战平广州富力，主教练张外龙出席了赛后新闻发布会。 河南建业主教练张外龙 广州富力主教练斯托伊科维奇</p>
+										</div>
+			
+									</li>
+								</ul>
+									<ul class="b3">
+										<li>2018-05-18视频：广州富力VS河南建业 赛前新闻发布会</li>
+										<li>2018-05-17张外龙：希望球队延续客场上佳表现</li>
+										<li>2018-05-13视频：河南建业VS北京人和 赛后新闻发布会</li>
+										<li>2018-05-12视频：河南建业VS北京人和 赛前新闻发布会</li>
+									</ul>	
+							</div>
+							<div id="d">
+								<h2>活动</h2>
+								<ul class="item-table">
+									<li>
+										<div class="item-table-left">
+											<a href="/a/webbase/html/activity/2016/1221/8714.html" target="_blank" title="22年建业足球感恩有你 球迷服务升级中……"><img src="img/8_161221100625_1.jpg" border='0' width='250' height='150' alt='22年建业足球感恩有你 球迷服务升级中……'></a>
+										</div>
+										<div class="item-table-right">
+											<h4><a href="/a/webbase/html/activity/2016/1221/8714.html">22年建业足球感恩有你 球迷服务升级中……</a></h4>
+											<p class="wenzi">建业官网讯 建业足球22年，这22年风雨历程，也是建业人的执着坚守。作为22年来唯一一个没有换过东家的民营足球俱乐部，胡董的情怀，坚守的信心，感染着每一位球员也感动着每一位</p>
+										</div>
+			
+									</li>
+								</ul>
+							</div>
+							<div id="e">
+								<h2>梯队</h2>
+								<ul class="item-table">
+									<li>
+										<div class="item-table-left">
+											<a href="/a/webbase/html/echelon/2018/0531/9134.html" target="_blank" title="河南建业召开青训交流会"><img src="img/8-1P531095R90-L.jpg" border='0' width='250' height='150' alt='河南建业召开青训交流会'></a>
+										</div>
+										<div class="item-table-right">
+											<h4><a href="/a/webbase/html/echelon/2018/0531/9134.html">河南建业召开青训交流会</a></h4>
+											<p class="wenzi">北京时间5月30日下午，河南建业足球俱乐部在郑州航海体育场召开了青训交流会，向媒体通报了俱乐部在青训教练培训方面的具体措施。河南建业俱乐部副总经理兼技术总监区楚良以及</p>
+										</div>
+			
+									</li>
+								</ul>
+								<ul class="b3">
+									<li>2018-05-20预备队-广州富力1-1河南建业</li>
+									<li>2018-05-14预备队-河南建业1-1河北京人和</li>
+								</ul>
+							</div>
+							<div id="f">
+								<h2>培训</h2>
+								<ul class="item-table">
+									<li>
+										<div class="item-table-left">
+											<a href="/a/webbase/html/traing/2016/0114/8412.html" target="_blank" title="建业与恒圣体育合作 推动青少年足球发展"><img src="img/8-160114194S5a4.jpg" ='0' width='250' height='150' alt='建业与恒圣体育合作 推动青少年足球发展'></a>
+										</div>
+										<div class="item-table-right">
+											<h4><a href="/a/webbase/html/traing/2016/0114/8412.html">建业与恒圣体育合作 推动青少年足球发展</a></h4>
+											<p class="wenzi">建业官网讯 2016年1月14日，恒圣（北京）体育文化发展有限公司与河南建业足球俱乐部正式签署合作协议。河南建业足球俱乐部将引进恒圣体育旗下Kegoal德国足球青训体系，并将该训练</p>
+										</div>
+			
+									</li>
+								</ul>
+								<ul class="b3">
+									<li>2015-08-162015河南建业足球夏令营圆满结束</li>
+									<li>2015-08-112015河南建业足球夏令营正式开营</li>
+								</ul>
+							</div>
+					</div>
+					<div id="PW">
+					<div class="pw">
+						<div class="pw1">
+							北京中赫国安VS河南建业&nbsp;&nbsp;&nbsp;&nbsp;07月18日
+						</div>
+						<div class="pw2">
+							<div class="duizhen">
+								<img src="img/beijingzhongheguoan.png"/>
+							</div>
+							<div class="vs">
+								<p> 19:35</p>
+								<img src="img/vs.jpg" />
+							</div>
+							<div class="duizhen">
+								<img src="img/henanjianye.png" />
+							</div>
+						</div>
+					</div>
+					<div id="PWW">
+						<div id="pww1">
+							<span>联赛排名</span><span>中超联赛</span><span>青超联赛</span>
+						</div>
+					
+						<table width="100%" cellspacing="0" cellpadding="0" class="dataTB2 dataTBbd">
+				                <tbody>
+				                <tr>
+				                    <th class="leftTH" width="40">
+				                        <div class="lineleft">排名</div>
+				                    </th>
+				                    <th width="120">球队</th>
+				                    <th width="70">胜</th>
+				                    <th width="70">平</th>
+				                    <th width="70">负</th>
+				                    <th class="rightTH"width="40px">
+				                        <div class="lineright">积分</div>
+				                    </th>
+				                </tr>
+				                <tr class="bg1">
+				                        <td class="nolbo">1</td>
+				                        <td><a href="http://www.sipg-fc.com/sipg/index.php">上海上港</a></td>
+				                        
+				                        <td>7</td>
+				                        <td>2</td>
+				                        <td>2</td>
+				                       
+				                        <td class="norbo">23</td>
+				                    </tr>
+				                    <tr class="bg2">
+				                        <td class="nolbo">2</td>
+				                        <td><a href="http://www.lnts.com.cn/">山东鲁能</a></td>
+				                        
+				                        <td>7</td>
+				                        <td>2</td>
+				                        <td>2</td>
+				                       
+				                        <td class="norbo">23</td>
+				                    </tr>
+				                                                                    <tr>
+				                                                <td class="nolbo">3</td>
+				                        <td><a href="/team/5505/">北京中赫国安</a></td>
+				                        
+				                        <td>6</td>
+				                        <td>4</td>
+				                        <td>1</td>
+				                        
+				                        <td class="norbo">22</td>
+				                    </tr>
+				                                                                    <tr class="bg2">
+				                                                <td class="nolbo">4</td>
+				                        <td><a href="/team/456/">江苏苏宁</a></td>
+				                       
+				                        <td>6</td>
+				                        <td>1</td>
+				                        <td>4</td>
+				                        
+				                        <td class="norbo">19</td>
+				                    </tr>
+				                                                                    <tr>
+				                                                <td class="nolbo">5</td>
+				                        <td><a href="/team/5829/">广州恒大</a></td>
+				                        
+				                        <td>5</td>
+				                        <td>3</td>
+				                        <td>3</td>
+				                        
+				                        <td class="norbo">18</td>
+				                    </tr>
+				                                                                    <tr class="bg2">
+				                                                <td class="nolbo">6</td>
+				                        <td><a href="/team/5791/">广州富力</a></td>
+				                        
+				                        <td>5</td>
+				                        <td>2</td>
+				                        <td>4</td>
+				                       
+				                        <td class="norbo">17</td>
+				                    </tr>
+				                                                                    <tr>
+				                                                <td class="nolbo">7</td>
+				                        <td><a href="/team/5506/">上海申花</a></td>
+				                       
+				                        <td>5</td>
+				                        <td>2</td>
+				                        <td>4</td>
+				                        
+				                        <td class="norbo">17</td>
+				                    </tr>
+				                                                                    <tr class="bg2">
+				                                                <td class="nolbo">8</td>
+				                        <td><a href="/team/5508/">天津泰达</a></td>
+				                       
+				                        <td>4</td>
+				                        <td>3</td>
+				                        <td>4</td>
+				                        
+				                        <td class="norbo">15</td>
+				                    </tr>
+				                                                                    <tr>
+				                                                <td class="nolbo">9</td>
+				                        <td><a href="/team/11108/">河北华夏幸福</a></td>
+				                        
+				                        <td>4</td>
+				                        <td>3</td>
+				                        <td>4</td>
+				                        
+				                        <td class="norbo">15</td>
+				                    </tr>
+				                                                                    <tr class="bg2">
+				                                                <td class="nolbo">10</td>
+				                        <td><a href="/team/2257/">北京人和</a></td>
+				                        
+				                        <td>4</td>
+				                        <td>3</td>
+				                        <td>4</td>
+				                        
+				                        <td class="norbo">15</td>
+				                    </tr>
+				                                                                    <tr>
+				                                                <td class="nolbo">11</td>
+				                        <td><a href="/team/9628/">天津权健</a></td>
+				                        
+				                        <td>4</td>
+				                        <td>3</td>
+				                        <td>4</td>
+				                        
+				                        <td class="norbo">15</td>
+				                    </tr>
+				                                                                    <tr class="bg2">
+				                                                <td class="nolbo">12</td>
+				                        <td><a href="/team/5773/">重庆斯威</a></td>
+				                        
+				                        <td>3</td>
+				                        <td>2</td>
+				                        <td>6</td>
+				                        
+				                        <td class="norbo">11</td>
+				                    </tr>
+				                                                                    <tr>
+				                                                <td class="nolbo">13</td>
+				                        <td><a href="/team/5837/">长春亚泰</a></td>
+				                        
+				                        <td>3</td>
+				                        <td>2</td>
+				                        <td>6</td>
+				                        
+				                        <td class="norbo">11</td>
+				                    </tr>
+				                                                                    <tr class="bg2">
+				                                                <td class="nolbo">14</td>
+				                        <td><a href="首页.html\">河南建业</a></td>
+				                        
+				                        <td>3</td>
+				                        <td>2</td>
+				                        <td>6</td>
+				                       
+				                        <td class="norbo">11</td>
+				                    </tr>
+				                                                                    <tr>
+				                                                <td class="nolbo">15</td>
+				                        <td><a href="/team/10033/">大连一方</a></td>
+				                        
+				                        <td>2</td>
+				                        <td>3</td>
+				                        <td>6</td>
+				                        
+				                        <td class="norbo">9</td>
+				                    </tr>
+				                                                                    <tr class="bg2">
+				                                                <td class="nolbo">16</td>
+				                        <td><a href="/team/9636/">贵州恒丰</a></td>
+				                        
+				                        <td>1</td>
+				                        <td>1</td>
+				                        <td>9</td>
+				                        
+				                        <td class="norbo">4</td>
+				                    </tr>
+				                </tbody>
+				           </table>
+			          </div>
+			          </div>
+			           <img id="app" src="img/app.jpg" />
+			     </div>
+			 </div>
+				<div id="xia">
+					<table>
+						<tr>
+							<td><a href=""><img src="img/jianye.png"></a></td>
+							<td><a href=""><img src="img/科饶恩.jpg"></a></td>
+							<td><a href=""><img src="img/zhongwomenye.jpg"></a></td>
+							<td><a href="http://www.hnjd.edu.cn/" target="_blank"><img src="img/80cb39dbb6fd5266d048dd34a318972bd40736aa.png"></a></td>
+							<td><a href=""><img src="img/1512091519106859.jpg"></a></td>
+							<td><a href=""><img src="img/822720efa3b.jpg" border="0"width="115px"height="70px"></a></td>
+						</tr>
+						<tr>
+							<td><a href="https://store.nike.com/cn/zh_cn/?ipp=120"target="_blank"><img src="img/naike.png"></a></td>
+							<td><a href="http://www.dahebao.cn/" target="_blank"><img src="img/dahe.png"></a></td>
+							<td><a href=""><img src="img/1406120845173204.jpg"></a></td>
+							<td><a href=""><img src="img/河南新闻.jpg"></a></td>
+							<td><a href=""><img src="img/未标题-1.jpg"></a></td>
+							<td><a href=""><img src="img/wulongxincheng.jpg"></a></td>
+						</tr>
+					</table>
+					<p>河南省郑州市经济技术开发区航海东路  航海体育场0125号  河南建业足球俱乐部官方网站  邮编：450000  电话：086-371-66787062</p>
+					<p>邮箱：jianye_fc@163.com</p>
+					<p>Add:Room0125,Hanghai Stadium,No.18 Chaofeng Road,National Economic and Technical Development Zone,Zhengzhou,Henan,P.R.China,450000</p>
+					<p>Henan Jianye Football Club Official Website</p>
+					<p>Tel: 086-371-66787062</p>
+					<p>Email: jianye_fc@163.com</p>
+					<p>网站代维：振华体育</p>
+					<p>Site Powered by Henan Digreal Planning Co.,Ltd </p>
+				</div>
+		
+		</div>
+	</body>
+</html>

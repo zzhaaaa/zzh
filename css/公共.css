@@ -1,0 +1,22 @@
+*{list-style: none;text-decoration: none;padding: 0px;margin: 0px;}
+
+#a{width: auto;height: 200px;background-color:#fc0301;margin: 0px auto;overflow: hidden;}
+#a span{float: right;}
+#a2{width:800px;margin: 0px auto;}
+#a2 li{
+	float:left;
+	font-size: 20px;
+	margin: 20px;
+	font-weight:bold ;
+}
+#a2 li a{color: white;font-family: "黑体";}
+.ll{
+	position: relative;top: 80px;
+}
+#xia{background-color: #06212d;color: gray;}
+#xia table{margin: 0px auto;width: 700px;}
+#xia td{margin: 50px;}
+#xia p{text-align: center;}
+#daohang a{color: #8F0F0E;font-size: 15px;line-height: 30px;}
+#app{margin-top: 10px;}
+

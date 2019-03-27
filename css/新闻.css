@@ -1,0 +1,36 @@
+#XINWEN{overflow: hidden;margin: 0px auto;}
+#XW{background-image: url(../img/QQ图片20180628092322.png);}
+#xinw{width: 960px;margin: 0px auto;background-image: url(../img/QQ图片20180625161739.png);overflow: hidden;}
+#xinwen{background-color: white;width: 660px;margin: 40px 20px 0px 0px; border-top:3px #8f0f0e solid;}
+.xinwen1{background-color: #f0f1f3;padding: 0px 20px 20px 20px;}
+.newslist{height:278px; }
+.arcbgtitle{ width:100%; height:25px; padding-top:20px; margin-bottom:20px;}
+.arcbgtitle img{ float:left;}
+.newscon{padding-top:15px;padding-left: 25px;}
+.arcnewsl{width:290px; float:left;}
+.arcnewsl h3{ font-size:22px; text-align:center; font-weight:normal; margin-bottom:10px;}
+.arcnewsl h3 a{ color:#8f0f0d;}
+.arcnewsl p{ font-size:14px; line-height:20px; text-indent:30px;}
+.arcnewsl p a{ color:#8f0f0d;}
+.arcnewsr{float:right; width:266px; height:150px; padding-top:5px;}
+#xinwen2{clear: both;border-bottom: 1px gray solid;border-top: 1px gray solid;padding: 0px 20px 20px 20px;}
+#xinwen20{height: 25px;margin-top: 20px;}
+#xinwen21{margin-top: 15px;padding-left: 25px;}
+#xinwen21 li{height:30px; line-height:30px;}
+#xinwen21 a{color: black;font-size:16px;}
+#xinwen3{height: 350px;padding-left: 25px;}
+#xinwen31{margin-top: 20px;}
+#xinwen32{margin-top: 15px;padding-left: 25px;}
+.tupian{
+	float: left;margin: 2px;
+	
+}
+.tupian1,.tupian2{
+	float: left;
+	margin: 2px;
+}
+#xinwen4{padding-left: 25px;}
+#dibu{border: 1px gray solid;}
+
+#xinwen,#PW{float: left;}
+#PW{margin: 40px 10px 0px 0px;}

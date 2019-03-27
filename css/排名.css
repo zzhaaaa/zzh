@@ -1,0 +1,10 @@
+*{text-decoration: none;margin: 0px;padding: 0px;}
+#PW{width: 260px;background-color: white;}
+.pw{font-size: 15px;border-top: 3px black solid;}
+.pw1{border-bottom: 1px gray solid;}
+.pw2{margin: 0px auto;width: 220px;}
+#PWW{clear:left;font-size: 11px;text-align: center;background-color: black;}
+#PW table{background-color: red;color: white;height: 400px;width: 250px;margin: 0px auto;}
+.duizhen,.vs{float: left;}
+#pww1 span{margin: 0px 10px;font-size: 15px;color: white;}
+#PW a{color: white;}

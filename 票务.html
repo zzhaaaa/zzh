@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/公共.css"type="text/css"rel="stylesheet" />
+		<link href="css/票务.css"type="text/css"rel="stylesheet" />
+	</head>
+	<body>
+		<div id="piaowu">
+			<div id="a">
+			<span><a href="">登陆</a><a href="">注册</a></span>
+			<ul id="a2">
+				<li><img src="img/timg.jpg" /></li>
+				<li class="ll"><a href="首页.html">首页</a>
+		  			<dl class="dl" style="display: none;">
+		  				<dt><a class="a21" href="">一线队</a></dt>
+		  				<dt><a class="a21" href="">视频</a></dt>
+		  				<dt><a class="a21" href="">活动</a></dt>
+		  			</dl>
+		  		</li>
+		  		<li class="ll"><a href="新闻.html">新闻</a>
+		  			<dl class="dl" style="display: none;" >
+		  				<dt><a class="a21" href="">新闻头条</a></dt>
+		  				<dt><a class="a21" href="">官方新闻</a></dt>
+		  				<dt><a class="a21" href="">精彩时刻</a></dt>
+		  			</dl>
+		  		</li>
+		  		<li class="ll"><a href="球队.html#a1">球队</a>
+		  			<dl class="dl" style="display: none;">
+		  				<dt><a class="a21" href="">教练组</a></dt>
+		  				<dt><a class="a21" href="">一线队</a></dt>
+		  				<dt><a class="a21" href="">预备队</a></dt>
+		  			</dl>
+		  		</li>
+		  		<li class="ll"><a href="俱乐部.html">俱乐部</a>
+		  			<dl class="dl" style="display: none;">
+		  				<dt><a class="a21" href="">简介 </a></dt>
+		  				<dt><a class="a21" href="">历史 </a></dt>
+		  				<dt><a class="a21" href="">荣誉</a></dt>
+		  			</dl>
+		  		</li>
+		  		<li class="ll"><a href="票务.html">票务</a></li>
+			</ul>
+		</div>
+		<script>
+	  	var ul=document.getElementById("a2");
+	  	var a=ul.getElementsByTagName("a");
+	  	for(var i=0;i<a.length;i++){
+	  		a[i].onmouseover=function(e){
+	  			this.style.backgroundColor="red";
+	  		    this.style.color="white";
+	  		     var dl=this.nextElementSibling;
+	  		      dl.style.display="block";
+	  		}
+	  		a[i].onmouseout=function(e){
+	  			this.style.backgroundColor="red";
+	  			this.style.color="white";
+	  			 var dl=this.nextElementSibling;
+	  		      dl.style.display="none";
+	  		}
+	  	}
+	  </script>
+	  <!--
+      	作者：zzh
+      	时间：2018-06-28
+      	描述：
+      -->
+		<div id="pw">
+			<div id="pw1">
+				<div id="daohang">
+					<a href="首页.html">首页</a> > <a href="票务.html">票务</a>
+				</div>
+				<div id="pw12">
+					<div id="pw121">
+						<p>【2018赛季球票】</p>
+						<input type="button"value="售票已关闭" onclick="alert('已暂停售票')" />
+					</div>
+					<img src="img/piaowu.jpg" />
+					
+				</div>
+			</div>
+		</div>
+			<!--
+            	作者：offline
+            	时间：2018-06-20
+            	描述：分隔线
+            -->
+			<div id="xia">
+				<table>
+					<tr>
+						<td><a href="首页.html\"><img src="img/jianye.png"></a></td>
+						<td><a href=""><img src="img/科饶恩.jpg"></a></td>
+						<td><a href=""><img src="img/zhongwomenye.jpg"></a></td>
+						<td><a href=""><img src="img/80cb39dbb6fd5266d048dd34a318972bd40736aa.png"></a></td>
+						<td><a href=""><img src="img/1512091519106859.jpg"></a></td>
+						<td><a href=""><img src="img/822720efa3b.jpg" border="0"width="115px"height="70px"></a></td>
+					</tr>
+					<tr>
+						<td><a href=""><img src="img/naike.png"></a></td>
+						<td><a href=""><img src="img/dahe.png"></a></td>
+						<td><a href=""><img src="img/1406120845173204.jpg"></a></td>
+						<td><a href=""><img src="img/河南新闻.jpg"></a></td>
+						<td><a href=""><img src="img/未标题-1.jpg"></a></td>
+						<td><a href=""><img src="img/wulongxincheng.jpg"></a></td>
+					</tr>
+				</table>
+				<p>河南省郑州市经济技术开发区航海东路  航海体育场0125号  河南建业足球俱乐部官方网站  邮编：450000  电话：086-371-66787062</p>
+				<p>邮箱：jianye_fc@163.com</p>
+				<p>Add:Room0125,Hanghai Stadium,No.18 Chaofeng Road,National Economic and Technical Development Zone,Zhengzhou,Henan,P.R.China,450000</p>
+				<p>Henan Jianye Football Club Official Website</p>
+				<p>Tel: 086-371-66787062</p>
+				<p>Email: jianye_fc@163.com</p>
+				<p>网站代维：振华体育</p>
+				<p>Site Powered by Henan Digreal Planning Co.,Ltd </p>
+			
+			</div>
+		</div>
+	
+	</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				position:relative;
+				overflow: hidden;
+				margin:0px;padding: 0px;
+			}
+			#ul{
+				width:855px;
+				height:360px;
+				
+			}
+			#ul li{
+				list-style: none;
+				display:none;
+				background-color: black;
+			}
+			
+			#ol{
+				position:absolute;
+				top:410px;
+				left:240px;
+			}
+			#ol li{
+				list-style: none;
+				float:left;
+				width:10px;
+				height:10px;
+				
+				border-radius: 50%;
+				border:1px solid white;
+				text-align:center;
+				margin-right:5px;
+			}
+			.active{
+				background-color:white;
+			}
+			.li img{float: left;margin: 0px;}
+			.li span{color: black;font-size: 40px;text-decoration: none;font-weight: bold;width: 150px;height: 350px;}
+			.li a{text-decoration: none;}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<ul id="ul">
+				<li style="display: block;"><div class="li"><a href=""><img src="img/8-1P6151152290-L.jpg" alt="" width="655px"height="360px"/><p>关于伊沃加盟河南建业足球俱乐部的公告</p></a></div></li>
+				<li><div class="li"><a href=""><img src="img/8_180519222105_1.jpg" alt=""  width="655px"height="360px"/><p>中超-广州富力1-1河南建业</p></a></div></li>
+				<li><div class="li"><a href=""><img src="img/8-1P51P932330-L.jpg" alt=""  width="655px"height="360px"/><p>广州富力VS河南建业 赛前宣传海报展示</p></a></div></li>
+				<li><div class="li"><a href=""><img src="img/8-1P5132245540-L.jpg" alt="" width="655px"height="360px" /><p>中超-河南建业1-0北京人和</p></a></div></li>
+				<li><div class="li"><a href=""><img src="img/8-1P5121005560-L.jpg" width="655px"height="360px"><p>河南建业VS北京人和 赛前宣传海报展示</p></a></div></li>
+			</ul>
+			<ol id="ol">
+				<li class="active"><div class="li"></div></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</div>
+		<script>
+			var ulLi=document.getElementById("ul")
+			        .getElementsByTagName("li");
+			var olLi=document.getElementById("ol")
+			        .getElementsByTagName("li");
+			 var index=0;       
+			var timer=setInterval(fun,1000);  
+			function fun(){
+				ulLi[index].style.display="none";
+				olLi[index].setAttribute("class","");
+				index++;
+				if(index==4){
+					index=0;
+				}
+				ulLi[index].style.display="block";
+				olLi[index].setAttribute("class","active")
+			}
+			var a;
+			for(var i=0;i<olLi.length;i++){
+				olLi[i].index=i; //就是这行是重点了，分别赋予每个li的index值。
+				olLi[i].onmouseover=function(e){
+					clearInterval(timer);
+					a=this.index;
+					console.log(a);
+					for(var j=0;j<olLi.length;j++){
+						olLi[j].setAttribute("class","")
+					}
+				
+					for(var k=0;k<ulLi.length;k++){
+						ulLi[k].style.display="none";
+					}
+					olLi[a].setAttribute("class","active")
+					ulLi[a].style.display="block";
+				}
+			}
+			/*var ul=document.getElementById("ul");
+			ul.onmouseover=function(){
+				clearInterval(timer);
+			}
+			ul.onmouseout=function(){
+				timer=setInterval(fun,1000);
+			}*/
+			
+		</script>
+	</body>
+</html>
